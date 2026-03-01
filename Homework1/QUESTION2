@@ -1,0 +1,10 @@
+binzhaoms@mac Homework1 % python3 question2.py
+1000 - 10000 * 0.1
+result: -1.588713327560498e-10
+10000 - 100000 * 0.1
+result: -1.884864639367656e-08
+100000 - 1000000 * 0.1
+result: -1.3328811345469926e-06
+
+Analysis:
+We can see that due to floating point precision errors, result is slightly deviated from expected result: 0.
