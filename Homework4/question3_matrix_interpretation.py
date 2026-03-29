@@ -20,10 +20,10 @@ print("=" * 70)
 
 # Load SVD components
 print("\n[1] Loading SVD components...")
-U = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/U_svd.npy')
-sigma = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/sigma_svd.npy')
-Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/Vt_svd.npy')
-labels = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/mnist_labels.npy')
+U = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/U_svd.npy')
+sigma = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/sigma_svd.npy')
+Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/Vt_svd.npy')
+labels = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/mnist_labels.npy')
 
 print(f"    U shape: {U.shape} (784 pixels × 784 modes)")
 print(f"    Σ shape: {sigma.shape} (784 singular values)")
@@ -352,7 +352,7 @@ ax.text(0.05, 0.95, summary_text, transform=ax.transAxes,
         fontsize=9.5, verticalalignment='top', fontfamily='monospace',
         bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8))
 
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q3_matrix_interpretation.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q3_matrix_interpretation.png', 
             dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q3_matrix_interpretation.png'")
 plt.close()

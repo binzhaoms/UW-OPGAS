@@ -17,7 +17,7 @@ print("=" * 80)
 # ============ LOAD RESULTS ============
 print("\n[1] Loading pairwise LDA results...")
 
-results_dict = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/extra_q3_q4_pairwise_results.npy', allow_pickle=True).item()
+results_dict = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/extra_q3_q4_pairwise_results.npy', allow_pickle=True).item()
 all_results = results_dict['all_results']
 
 print(f"    Loaded {len(all_results)} digit pair results")
@@ -95,7 +95,7 @@ ax.set_yticks(np.arange(10)-.5, minor=True)
 ax.grid(which="minor", color="white", linestyle='-', linewidth=2)
 
 plt.tight_layout()
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/pairwise_lda_heatmap.png', dpi=150, bbox_inches='tight')
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/pairwise_lda_heatmap.png', dpi=150, bbox_inches='tight')
 print("    Saved: pairwise_lda_heatmap.png")
 
 # ============ CREATE SIMPLIFIED VIEW ============
@@ -139,7 +139,7 @@ ax.set_yticks(np.arange(10)-.5, minor=True)
 ax.grid(which="minor", color="white", linestyle='-', linewidth=2)
 
 plt.tight_layout()
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/pairwise_lda_heatmap_percent.png', dpi=150, bbox_inches='tight')
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/pairwise_lda_heatmap_percent.png', dpi=150, bbox_inches='tight')
 print("    Saved: pairwise_lda_heatmap_percent.png")
 
 # ============ SUMMARY STATISTICS ============

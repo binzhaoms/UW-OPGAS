@@ -38,7 +38,7 @@ y_test = y[60000:]
 
 # Load SVD for faster feature representation (102 modes = 95% variance)
 print("\n[2] Loading SVD compressed features (102 modes for 95% variance)...")
-Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/Vt_svd.npy')
+Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/Vt_svd.npy')
 n_modes = 102
 
 X_train_pca = Vt[:n_modes, :60000].T   # (60000, 102)
@@ -231,7 +231,7 @@ results_dict = {
     'max_accuracy': max_acc
 }
 
-np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/extra_q3_q4_pairwise_results.npy', results_dict, allow_pickle=True)
+np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/extra_q3_q4_pairwise_results.npy', results_dict, allow_pickle=True)
 print("\nResults saved to 'extra_q3_q4_pairwise_results.npy'")
 
 print("\n" + "=" * 80)

@@ -20,10 +20,10 @@ print("=" * 70)
 
 # Load SVD components from Question 1
 print("\n[1] Loading SVD components from Question 1...")
-U = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/U_svd.npy')
-sigma = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/sigma_svd.npy')
-Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/Vt_svd.npy')
-labels = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/mnist_labels.npy')
+U = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/U_svd.npy')
+sigma = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/sigma_svd.npy')
+Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/Vt_svd.npy')
+labels = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/mnist_labels.npy')
 
 print(f"    U shape: {U.shape}")
 print(f"    Sigma shape: {sigma.shape}")
@@ -246,7 +246,7 @@ ax9.text(0.05, 0.95, summary_text, transform=ax9.transAxes,
          fontsize=10, verticalalignment='top', fontfamily='monospace',
          bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q2_spectrum_analysis.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q2_spectrum_analysis.png', 
             dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q2_spectrum_analysis.png'")
 plt.close()
@@ -301,7 +301,7 @@ for digit_idx in range(10):
 plt.suptitle('Image Reconstruction with Different Number of Modes (rank r)\nRows = Different Digits | Columns = Different Reconstruction Ranks', 
              fontsize=14, fontweight='bold', y=0.995)
 plt.tight_layout()
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q2_reconstruction_visual.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q2_reconstruction_visual.png', 
             dpi=100, bbox_inches='tight')
 print("    Figure saved as 'q2_reconstruction_visual.png'")
 plt.close()

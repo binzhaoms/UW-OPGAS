@@ -122,7 +122,7 @@ ax.set_xticks(modes)
 ax.grid(True, alpha=0.3, axis='y')
 
 plt.tight_layout()
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q1_svd_spectrum.png', dpi=150, bbox_inches='tight')
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q1_svd_spectrum.png', dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q1_svd_spectrum.png'")
 plt.close()
 
@@ -142,8 +142,8 @@ print("=" * 70)
 
 # Save SVD components for later use
 print("\n[8] Saving SVD components to files...")
-np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/U_svd.npy', U)
-np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/sigma_svd.npy', sigma)
-np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/Vt_svd.npy', Vt)
-np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/mnist_labels.npy', y)
+np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/U_svd.npy', U)
+np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/sigma_svd.npy', sigma)
+np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/Vt_svd.npy', Vt)
+np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/mnist_labels.npy', y)
 print("    Saved: U_svd.npy, sigma_svd.npy, Vt_svd.npy, mnist_labels.npy")

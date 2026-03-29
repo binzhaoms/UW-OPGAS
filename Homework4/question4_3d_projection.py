@@ -17,10 +17,10 @@ print("=" * 70)
 
 # Load SVD components
 print("\n[1] Loading SVD components...")
-U = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/U_svd.npy')
-sigma = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/sigma_svd.npy')
-Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/Vt_svd.npy')
-labels = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/mnist_labels.npy')
+U = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/U_svd.npy')
+sigma = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/sigma_svd.npy')
+Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/Vt_svd.npy')
+labels = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/mnist_labels.npy')
 
 print(f"    U shape: {U.shape}")
 print(f"    Sigma shape: {sigma.shape}")
@@ -93,19 +93,19 @@ ax.set_box_aspect([1,1,1])
 ax.view_init(elev=20, azim=45)
 
 plt.tight_layout()
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q4_3d_projection_view1.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q4_3d_projection_view1.png', 
             dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q4_3d_projection_view1.png' (angle: 20°, 45°)")
 
 # Create another view
 ax.view_init(elev=10, azim=120)
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q4_3d_projection_view2.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q4_3d_projection_view2.png', 
             dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q4_3d_projection_view2.png' (angle: 10°, 120°)")
 
 # Create top-down view
 ax.view_init(elev=90, azim=0)
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q4_3d_projection_topdown.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q4_3d_projection_topdown.png', 
             dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q4_3d_projection_topdown.png' (top-down view)")
 
@@ -177,7 +177,7 @@ ax.grid(True, alpha=0.3)
 ax.legend(fontsize=8, ncol=2, loc='upper right')
 
 plt.tight_layout()
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q4_2d_projections.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q4_2d_projections.png', 
             dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q4_2d_projections.png' (2D projections)")
 plt.close()
@@ -218,7 +218,7 @@ ax.legend(loc='upper left', fontsize=9, ncol=2)
 
 ax.view_init(elev=20, azim=45)
 plt.tight_layout()
-plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/q4_3d_with_centers.png', 
+plt.savefig('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/q4_3d_with_centers.png', 
             dpi=150, bbox_inches='tight')
 print("    Figure saved as 'q4_3d_with_centers.png' (with cluster centers)")
 plt.close()

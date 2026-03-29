@@ -44,7 +44,7 @@ y_test = y[60000:]
 
 # Load SVD features
 print("\n[2] Loading SVD compressed features (102 modes for 95% variance)...")
-Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/Vt_svd.npy')
+Vt = np.load('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/Vt_svd.npy')
 n_modes = 102
 
 X_train_pca = Vt[:n_modes, :60000].T
@@ -393,7 +393,7 @@ final_results = {
     'hard_pair_4_9': results_hard
 }
 
-np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homwork4/final_classifier_comparison.npy', final_results, allow_pickle=True)
+np.save('/Users/binzhaoms/Dev/UW-OPGAS/Homework4/final_classifier_comparison.npy', final_results, allow_pickle=True)
 print("\n\nResults saved to 'final_classifier_comparison.npy'")
 
 print("\n" + "=" * 80)
