@@ -1,0 +1,25 @@
+{
+  "run_name": "tune_eps005",
+  "grid_length": 4,
+  "episodes": 10000,
+  "epsilon": 0.05,
+  "gamma": 0.98,
+  "rewards": [
+    -2.0,
+    -1.0,
+    5.0,
+    1000.0
+  ],
+  "seed": 42,
+  "training_seconds": 0.4115440845489502,
+  "num_states_in_q_table": 3184,
+  "evaluation": {
+    "n_games": 200,
+    "wins": 0,
+    "losses": 200,
+    "win_rate": 0.0,
+    "avg_reward": 0.415,
+    "avg_steps": 4.775
+  },
+  "q_table_file": "Homework6/results/tune_eps005_q_table.pkl"
+}
